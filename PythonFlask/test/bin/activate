@@ -46,7 +46,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV='/home/40345238/lab2/test'
+VIRTUAL_ENV='/home/40345238/SET09103/PythonFlask/test'
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
