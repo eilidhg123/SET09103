@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, url_for
+from flask import Flask, request, redirect, url_for, render_template
 app = Flask(__name__)
 
 @app.route("/", methods=['POST','GET'])
@@ -9,7 +9,7 @@ def home():
         level=request.form['level']
         return "Hopefully this works" % level
     else:
-        return "This is the home page that users will be greeted with when they first open the web app"
+        return render_template('home.html')
 
 @app.route("/stageone/", methods=['POST','GET'])
 def stageone():
@@ -44,19 +44,6 @@ def config():
     s.append('url:'+app.config['url'])
     s.append('ip_address:'+app.config['ip_address'])
     return ', '.join(s)
-
-def init(app):
-    config=ConfigParser.ConfigParser()
-    try:
-        config_location="references/defaults.cfg"
-        config.read(config_location)
-
-        app.config['DEBUG']=config.get("config","debug")
-        app.config['ip_address']=config.get("config","ip_address")
-        app.config['port']=config.get("config","port")
-        app.config['url']=config.get("config","url")
-    except:
-        print("Could not read configs from: ",config_location)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

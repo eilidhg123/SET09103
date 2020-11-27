@@ -1,0 +1,19 @@
+header{
+   height:225px; top:0;
+}
+
+footer {
+	position: fixed;
+	left:0;
+	right:0;
+	height:150px; 
+	bottom:0;
+	font: 16px, Constantia;
+	color: #9b3131;
+}
+
+body {
+	background-color: #f9ecec;
+	text-align: center;
+	font: 16px italic, Constantia;
+}
