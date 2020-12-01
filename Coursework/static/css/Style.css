@@ -1,5 +1,11 @@
 header{
-   height:225px; top:0;
+   height:225px;
+   top:0;
+   background-color:#555454;
+   font-family: Arial;
+   font-size: 30px;
+   color:#FFFFFF;
+
 }
 
 footer {
@@ -8,12 +14,35 @@ footer {
 	right:0;
 	height:150px; 
 	bottom:0;
-	font: 16px, Constantia;
-	color: #9b3131;
+	font-family: Arial;
+	font-size: 16px;
+	background-color: #555454;
+	color:#FFFFFF;
 }
 
 body {
-	background-color: #f9ecec;
+	background-color: #FFFFFF;
 	text-align: center;
-	font: 16px italic, Constantia;
+	font-family: Arial;
+	font-size: 16px;
+	color: #555454;
 }
+
+a {
+	color: #9b3131;
+	text-decoration: none;
+	font-style: italic;
+	font-style: bold;
+}
+
+button {
+	font: 16px, Arial;
+	border-radius: 4px;
+	border: none;
+	color: #555454;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+

@@ -2,12 +2,19 @@
 <html>
 <head>
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}">
-	<title>LEARN HTML!</title>
+	<title>Let's learn html - stage selection</title>
 </head>
 <body>
-	<header>LET'S LEARN HTML!</header>
+	<header>
+	<b>Acccesaility Menu</b>
+	<p>LET'S LEARN HTML!</p>
+	</header>
 	<p>Let's begin with picking a class for your skill level!</p>
-	<a hred="{{ url_for('stageone') }}"><button type="stageone button">Stage One</button></a>
-	<a href="{{ url_for('stagetwo') }}"><button type="stagetwo button">Stage Two</button></a>
+		<a href="{{ url_for('stageone') }}"><button>Stage One</button></a>
+		<a href="{{ url_for('stagetwo') }}"><button>Stage Two</button></a>
+	
+	<footer>
+	</footer>
+	
 </body>
 </html>
