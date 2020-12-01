@@ -1,10 +1,19 @@
 from flask import Flask, request, redirect, url_for, render_template
 app = Flask(__name__)
 
-@app.route("/", methods=['POST','GET'])
+@app.route('/', methods=['GET'])
+def start():
+    render_template('form.html')
+    return render_template('home.html')
+
+@app.route("/home/", methods=['POST','GET'])
 def home():
     #home page
     return render_template('home.html')
+
+@app.route('/accessability')
+def accessability():
+    return "Welcome to the Accessability menu"
 
 @app.route("/stageone/", methods=['POST','GET'])
 def stageone():

@@ -6,14 +6,17 @@
 </head>
 <body>
 	<header>
-	<b>Acccesaility Menu</b>
-	<p>LET'S LEARN HTML!</p>
+		<navbar><a href="{{ url_for('accessability') }}">ACCESSABILITY MENU</a></navbar>
+	LET'S LEARN HTML!
 	</header>
-	<p>Let's begin with picking a class for your skill level!</p>
+	<main>
+		<p>Welcome to LET'S LEARN HTML name here! We will cover the basics of HTML and help you to understand what each tag is and how to use them to create your own HTML web page! All you will need is this website and notepad++ on your computer.</p>
+		<p>Let's begin with picking a class for your skill level!</p>
 		<a href="{{ url_for('stageone') }}"><button>Stage One</button></a>
 		<a href="{{ url_for('stagetwo') }}"><button>Stage Two</button></a>
-	
+	</main>
 	<footer>
+		CREATED BY 40345238(EILIDH GRANT)
 	</footer>
 	
 </body>

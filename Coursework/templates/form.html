@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Welcome! <title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}"/>
+	</head>
+	<body>
+		<navbar> </navabr>
+		<header>WELCOME! </header>
+		<main>  
+			Welcome, to begin we'd like to get your name. 
+			<h2>you can give us a fake one if you want! </h2>
+			<form action=" {{ url_for('start')}}" method="post">
+				<input type="text" id="name" name="name">
+				<input type="submit" value="submit">
+			</form>
+		</main>
+	<footer>
+		CREATED BY 40345238(EILIDH GRANT)
+	</footer>
+
+	</body>
+
+</html>

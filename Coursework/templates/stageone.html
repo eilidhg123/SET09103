@@ -1,11 +1,24 @@
 <!doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" href="{{ url_for('static', filename='cc/Style.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}">
 		<title>Let's learn HTML!</title>
 	</head>
 	<body>
-		<b><a href="{{ url_for('home') }}">HOME</a></b>
-		<header>STAGE ONE:Let's learn HTML!</header>
+		<header>
+		<navbar><a href="{{ url_for('home') }}">HOME/</a><a href="{{ url_for('accessability') }}">ACCESSABILITY MENU    </a></navbar>
+		STAGE ONE:Let's learn HTML!</header>
+		<main>
+			<p> To better understand how to build a HTML based web page, we first need to understand what each tag does and how they work </p>
+		<table>
+			<tr>
+				<td>&lt;html&gt; &lt;/html&gt; </td>
+				<td><p>We should always start with &lt;html&gt;</p> Addtionally we need to remember to close every tag we open, hence we will end our code for out webpage with &lt;/html&gt;</td>
+			</tr>
+		</main>	
+			<footer>
+				CREATED BY 40345238(EILIDH GRANT)
+			</footer>
+		</table>
 	</body>
 </html>
