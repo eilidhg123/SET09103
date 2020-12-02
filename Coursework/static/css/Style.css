@@ -45,6 +45,15 @@ footer {
 	font-size: 16px;
 	background-color: #555454;
 	color:#FFFFFF;
+       
+}
+
+.maintbl {
+
+	text-align: center;
+	vertical-align: center;
+	padding: 10px;
+	border: 1px solid #555454;
 }
 
 body {
@@ -55,7 +64,7 @@ body {
 }
 
 a {
-	color: #FFFFFF;
+	color: #BE381B;
 	text-decoration: none;
 	font-style: italic;
 	font-style: bold;
@@ -70,6 +79,4 @@ button {
 	text-decoration: none;
 	display: inline-block;
 }
-
-
 

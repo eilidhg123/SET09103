@@ -2,17 +2,52 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}"/>
-	<title>STAGE TWO: DIY!</title>
+	<title>DIY: Create your own HTML!</title>
 	</head>
+	<script>
+		const downloadToFile = (content, filename, contentType) => { 
+			const a = document.createElement('a');
+			const file = new Blob([content], {type: contentType});
+			a.href URL.createObjectURL(file);
+ 			a.download = filename;
+  			a.click();
+  
+  			URL.revokeObjectURL(a.href);
+			};
+
+			document.querySelector('#btnSave').addEventListener('click', () => {
+  			const textArea = document.querySelector('textarea');
+  
+  			downloadToFile(textArea.value, 'my-new-file.txt', 'text/plain');
+});
+
+	</script>
 
 	<body>
 		<header>
-		<navbar><a href="{{ url_for('home') }}"> HOME/</a> <a href="{{ url_for('accessability') }}">             ACCESSABILITY MENU</a></navbar>
+	
+		<navbar>
+		<a href="{{ url_for('home') }}"> HOME</a><a href="{{ url_for('accessability') }}">             ACCESSABILITY MENU</a>/ <a href="{{ url_for('stageone') }}"> THE GUIDE </a></navbar>
 		STAGE TWO: DIY! </header>
 
 		<main>
+			Bellow you should be able to see a text box. This is it, from here on out you are on your own! If you need the<a href="{{ url_for('home') }}"> guide</a> as reference then it is advised that you open it in another tab, as you will loose your progress.
+			<p>To get you started the text editor contains a template for you to edit and put your code into.</p>
+			<p>You may need to resize your textbox in order to get the best view of the HTML</p>
+			<p> </p>
+			<textarea>&lt;!doctype html&gt;
+				&lt;html&gt;
+					&lt;head&gt;
+						&lt;title&gt; &lt;/title&gt;
+					&lt;/head&gt;
+					&lt;body&gt;
+					&lt;/body&gt;
+				&lt;/html&gt;
 
-			WELCOME TO STAGE TWO!
+			</textarea>
+			<p>to test your code simply save the code using the 'save' button bellow and right click the file and open in browser. If your HTML is error free then you should be able to see your webpage!</p>
+			<p>(you should find your saved file on your desktop!)</p>
+			<button id="BtnSave">SAVE</button>
 		</main>
 
 		<footer>
